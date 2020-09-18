@@ -1,0 +1,120 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #040404;
+  color: #ffffff;
+  position: relative;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+  
+form, p, span {
+    margin:0;
+    padding:0; }
+  
+input { 
+  font:12px arial; 
+}
+  
+a {
+    color:#ffffff;
+    text-decoration:none; 
+}
+  
+a:hover { text-decoration:underline; }
+  
+#container, #userLogin {
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom:25px;
+    background: #00bcd4;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../img/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.8);
+    width:80%;
+    height: 82vh;
+}
+  
+#userLogin { 
+  padding-top:18px; 
+  text-align: center;
+}
+  
+#userLogin p { 
+  margin: auto; 
+  text-align: center;
+}
+
+#chatspace {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    color: #000000;
+    background:#fff;
+    height:60vh;
+    width:70%;
+    border:1px solid #000000;
+    overflow:auto; 
+}
+  
+#chat {
+    margin: 0 auto;
+    margin-left: 14%;
+    width:71.5%;
+    border:1px solid #ACD8F0; 
+}
+
+@media screen and (max-width: 768px) {
+    #chat{
+        margin-left: 11%;
+        width: 75%;
+    }
+}
+#submitmsg { 
+    border-radius: 5px;
+    border:1px solid #ACD8F0; 
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 60px; 
+}
+
+#submitmsg:hover {
+    background: #00bcd4;
+}
+  
+.error { 
+  color: #ff0000; 
+}
+  
+#menu { 
+  padding:12.5px 25px 12.5px 25px; 
+}
+  
+.welcome { 
+  float:left; 
+}
+  
+.logout { 
+  float:right; 
+}
+  
+.msgln { 
+  margin:0 0 2px 0; 
+}
